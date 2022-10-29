@@ -9,7 +9,7 @@ body {
   display: grid;
   min-height: 500px;
   height: 70vh;
-  grid-template-rows: 75% 25%;
+  grid-template-columns: 75% 25%;
   grid-template-rows: 75% 25%;
   grid-template-areas:
     "featuredProduct secondaryProduct"
@@ -30,8 +30,12 @@ body {
 #CTA {
   background-image: url("../images/woodbg.png");
   grid-area: CTA;
-  justify-content: 0px 5%;
+  justify-content: space-around;
   cursor: pointer;
+}
+
+#CTA img {
+  height: 20%;
 }
 
 .heroGridArea {
@@ -100,11 +104,14 @@ h4 {
 }
 
 #headline {
-  border: 5px solid #ff6200;
+  border-bottom: 5px solid #ff6200;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
   display: grid;
   z-index: 3;
+  right: -45px;
+  top: 85px;
+  padding: 15px;
 }
 
 #headline p {
